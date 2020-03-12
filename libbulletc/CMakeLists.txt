@@ -75,7 +75,7 @@ IF(MSVC)
     ENDIF()
 ENDIF(MSVC)
 
-ADD_LIBRARY(${BULLETC_LIB} SHARED
+ADD_LIBRARY(${BULLETC_LIB} STATIC
     dllmain.cpp
     src/conversion.h
     src/main.h
@@ -419,4 +419,4 @@ ADD_LIBRARY(${BULLETC_LIB} SHARED
 
 TARGET_LINK_LIBRARIES(${BULLETC_LIB} BulletCollision BulletDynamics LinearMath BulletFileLoader BulletSoftBody BulletWorldImporter BulletXmlWorldImporter HACD)
 
-ADD_SUBDIRECTORY(test)
+#ADD_SUBDIRECTORY(test)
